@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./searchBar.css";
-import Paginator from "../paginator/paginator";
+import Paginator from "../paginator/Paginator";
 import { SearchContext } from "../../context/SearchContext";
 import Filters from "../filters/Filters";
 
