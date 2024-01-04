@@ -29,10 +29,6 @@ function Filtered() {
   }, [searching]);
 
   useEffect(() => {
-    if (error) {
-      setPage(1);
-    }
-
     setPage(1);
   }, [error]);
 
