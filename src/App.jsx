@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import SearchBar from "./components/searchBar/SearchBar";
 import Filtered from "./components/filtered/Filtered";
 import { Routes } from "react-router-dom";
