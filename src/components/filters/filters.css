@@ -1,0 +1,37 @@
+select {
+    border: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #2c3e50;
+}
+
+.filter_reset {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: #e74c3c;
+}
+
+@media screen and (max-width: 727px){
+    .paginator {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 607px) {
+    select {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .filter_reset {
+        width: 100%;
+    }
+
+    .paginator {
+        margin-top: 5px;
+    }
+}

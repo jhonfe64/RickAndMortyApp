@@ -1,0 +1,26 @@
+.header {
+    padding:20px;
+    background: #ecf0f1;
+}
+.header div  {
+    display: flex;
+}
+
+.header div div {
+    width: 80px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 340px){
+    .header h1 {
+        font-size: 16px;
+    }
+
+    .header div div {
+        width: 50px;
+    }
+}

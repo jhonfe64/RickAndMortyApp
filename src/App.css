@@ -1,0 +1,51 @@
+body {
+    background: #34495e
+}
+
+.img_fluid {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.items_center {
+    align-items: center;
+}
+
+.text_white {
+    color: white;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.w_full {
+    width: 100%
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.justify_end {
+    justify-content: flex-end;
+}

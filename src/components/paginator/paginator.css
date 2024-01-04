@@ -1,0 +1,19 @@
+.paginator {
+    
+}
+
+.paginator button {
+    background: #2c3e50;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.paginator button:first-child {
+    margin-right: 10px;
+}
+
+.paginator button:last-child {
+    margin-left: 10px;
+}

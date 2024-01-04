@@ -1,0 +1,43 @@
+.caracter_card {
+    width: 27%;
+    background: #2c3e50;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer
+
+}
+
+.caracter_card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.caracter_card .img_container {
+    height: 280px;
+}
+
+.caracter_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	object-position: center;
+}
+
+.caracter_card h5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+@media only screen and (max-width: 1099px){
+    .caracter_card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .caracter_card {
+        width: 100%;
+    }
+}
