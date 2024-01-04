@@ -9,8 +9,6 @@ import NoData from "../noData/NoData";
 import "./filtered.css";
 
 function Filtered() {
-  const [characters, setCharacters] = useState([]);
-
   const { searching } = useContext(SearchContext);
   const { page, setPage } = useContext(PagesContext);
   const { filters } = useContext(FiltersContext);
@@ -21,7 +19,6 @@ function Filtered() {
   );
 
   useEffect(() => {
-    data?.results?.length > 0 && setCharacters(data.results);
     if (page === data?.info?.pages) {
       setPage(1);
     }
@@ -33,18 +30,19 @@ function Filtered() {
 
   useEffect(() => {
     if (error) {
-      setCharacters([]);
       setPage(1);
     }
+
+    setPage(1);
   }, [error]);
 
   return (
     <div className="filtered">
-      {characters.length > 0 ? (
+      {data?.results?.length > 0 ? (
         loading ? (
           <Loader />
         ) : (
-          <Results characters={characters} />
+          <Results characters={data?.results} />
         )
       ) : (
         <NoData />

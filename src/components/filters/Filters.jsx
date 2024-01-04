@@ -17,7 +17,6 @@ const Filters = () => {
 
   useEffect(() => {
     setPage(1);
-    console.log(filters);
   }, [filters]);
 
   const handleSelect = (e) => {
@@ -40,8 +39,6 @@ const Filters = () => {
       });
     }
   };
-
-  //cuando lso filters estenb reseteados y no haya nada de texto que el valor sea 1 del counter
 
   return (
     <div>
@@ -85,7 +82,7 @@ const Filters = () => {
         <option value="ronenberg">Cronenberg</option>
         <option value="Robot">Robot</option>
       </select>
-      {Object.values(filters).some((valor) => valor !== " ") && (
+      {Object.values(filters).some((valor) => valor !== "") && (
         <button className="filter_reset text_white" onClick={resetFilters}>
           Reset filters
         </button>
