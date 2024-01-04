@@ -40,6 +40,7 @@ const Filters = () => {
     }
   };
 
+
   return (
     <div>
       <select
