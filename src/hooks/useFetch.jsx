@@ -10,7 +10,7 @@ function useFetch(url, trigger) {
       const res = await fetch(url);
       const data = await res.json();
       setData(data);
-      //if (!res.ok) throw Error("Error al consumir la api");
+      if (!res.ok) throw Error("Error al consumir la api");
     } catch (error) {
       setError(error);
     } finally {
