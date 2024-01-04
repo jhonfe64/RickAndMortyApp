@@ -5,7 +5,7 @@ import { PagesContext } from "../../context/PagesContext";
 import useFetch from "../../hooks/useFetch";
 import Loader from "../loader/Loader";
 import Results from "../results/Results";
-import NoData from "../noData/noData";
+import NoData from "../noData/NoData";
 import "./filtered.css";
 
 function Filtered() {
